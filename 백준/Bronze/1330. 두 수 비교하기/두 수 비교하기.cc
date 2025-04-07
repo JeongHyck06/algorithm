@@ -1,23 +1,17 @@
-//
-//  main.cpp
-//  algorithm
-//
-//  Created by 임정혁 on 8/23/24.
-//
+#include <stdio.h>
 
-#include <iostream>
-using namespace std;
-int main(int argc, const char * argv[]) {
-    int a,b;
-    
-    cin >> a >> b;
-    if(a > b) {
-        cout << ">" << endl;
+int main() {
+    int A, B;
+
+    scanf("%d %d", &A, &B);
+
+    if (A > B) {
+        printf(">");
+    } else if (A < B) {
+        printf("<");
+    } else if (A == B) {
+        printf("==");
     }
-    else if (a < b){
-        cout << "<" << endl;
-    }
-    else {
-        cout << "==" << endl;
-    }
+
+    return 0;
 }
